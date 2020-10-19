@@ -1,0 +1,12 @@
+testmymath:main-20209311.o add-20209311.o sub-20209311.o mul-20209311.o div-20209311.o
+	gcc main-20209311.o add-20209311.o sub-20209311.o mul-20209311.o div-20209311.o -o testmymath
+main-20209311.o:main-20209311.c head-20209311.h
+	gcc -c main-20209311.c
+add-20209311.o:add-20209311.c head-20209311.h
+	gcc -c add-20209311.c
+sub-20209311.o:sub-20209311.c head-20209311.h
+	gcc -c sub-20209311.c
+mul-20209311.o:mul-20209311.c head-20209311.h
+	gcc -c mul-20209311.c
+div-20209311.o:div-20209311.c head-20209311.h
+	gcc -c div-20209311.c
